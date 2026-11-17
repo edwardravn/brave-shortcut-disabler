@@ -1,0 +1,1 @@
+# Brave Shortcut Disabler
