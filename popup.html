@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shortcut Disabler</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Shortcut Disabler</h1>
+      <p class="intro">Control web-page keyboard shortcuts in every open tab.</p>
+
+      <label class="setting master" for="enabled">
+        <input id="enabled" type="checkbox" role="switch">
+        <span>
+          <strong>Block web-page shortcuts</strong>
+          <small>Enabled by default on all sites</small>
+        </span>
+      </label>
+
+      <label class="setting" for="block-single-key-actions">
+        <input id="block-single-key-actions" type="checkbox">
+        <span>
+          <strong>Block single-key page actions</strong>
+          <small>Also blocks shortcuts such as J, K, Escape, and Space outside typing fields</small>
+        </span>
+      </label>
+
+      <p id="status" class="status" aria-live="polite"></p>
+      <p class="notice">Text entry, IME composition, and AltGr typing remain available. Brave and operating-system shortcuts cannot be blocked by an extension.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
